@@ -11,3 +11,6 @@ function showUser()
 console.log("Global scope");
 console.log(user);  //print the global variable user
 showUser();
+
+
+console.log("Welcome to \"JavaScript Programming\"" + "\n" + "\tYou will enjoy this!");
