@@ -10,10 +10,21 @@
  */
 
 function FarenheitToCelcius(degree) {
-      return (degree-32) * (degree/1.8);
+      return (degree-32)/1.8;
 }
 
 function CelsiusToFarenheit(degree) {
-      return (degree*1.8) * (degree+32);
+      return (degree*1.8)+32;
 }
+
+document.getElementById("cValue").onchange = function() {
+      cDegree = document.getElementById("cValue").value;
+      document.getElementById("fValue").value = CelsiusToFarenheit(cDegree);
+};
+
+document.getElementById("fValue").onchange = function(){
+      fDegree = document.getElementById("fValue").value;
+      document.getElementById("cValue").value = FarenheitToCelcius(fDegree);
+};
+
 

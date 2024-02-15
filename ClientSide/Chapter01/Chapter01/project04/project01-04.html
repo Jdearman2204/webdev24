@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!--
+<!--
       JavaScript 7th Edition
       Chapter 1
       Hands-on Project 1-4
@@ -10,6 +10,7 @@
 
       Filename: project01-04.html
    -->
+
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -29,48 +30,49 @@
    <article>
       <h2>Shipping Address</h2>
       <form>
-      
+
          <fieldset id="addroptions">
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
                <div>Home</div>
-               <script>
-               homeStreet <br> +
-               homeCity, + homeState + homeCode 
+               <script type="text">
+                  homeStreet < br > +
+                     homeCity, + homeState + homeCode 
                </script>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <input type="radio" id="homeoption" name="shippingaddr" onclick="street(homestreet)"/>
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <script>
-                  workStreet <br> +
-                  workCity, + workState + workCode
+               <script type="text">
+                  workStreet < br > +
+                     workCity, + workState + workCode
                </script>
                <input type="radio" id="workoption" name="shippingaddr" />
             </label>
          </fieldset>
-         
-         
-          <fieldset id="contactinfo">
+
+
+         <fieldset id="contactinfo">
             <label for="street">
-              Street Address
-              <input type="text" id="street" />
+               Street Address
+               <input type="text" id="street" />
             </label>
             <label for="city">
-              City
-              <input type="text" id="city" />
+               City
+               <input type="text" id="city" />
             </label>
             <label for="state">
-              State
-              <input type="text" id="state" />
+               State
+               <input type="text" id="state" />
             </label>
             <label for="code">
-              Zip
-              <input type="text" id="code" />
+               Zip
+               <input type="text" id="code" />
             </label>
-          </fieldset>
-          
-     </form>
+         </fieldset>
+
+      </form>
    </article>
 </body>
+
 </html>
