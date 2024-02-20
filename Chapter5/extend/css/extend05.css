@@ -1,7 +1,7 @@
-/* 
-Style sheet created by: 
-Student's Name 
-Today's Date 
+/*  
+Student Name:
+File name: 
+Date: 
 */
 body {
     background-color: #dde3fd;
@@ -22,12 +22,29 @@ body {
 }
 
 /* sticky */
-
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+}
 
 /* relative */
-
+.relative {
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
 
 /* fixed */
-
+.fixed {
+    position: fixed;
+    top: 42px;
+    right: 42px;
+}
 
 /* absolute */
+.absolute {
+    position: absolute;
+    bottom: 6px;
+    right: 20px;
+}

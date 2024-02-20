@@ -1,4 +1,8 @@
-/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+/*
+Author: 
+File Name: 
+Date: 
+*/
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
@@ -12,6 +16,19 @@ body {
 	background-color: #e4f1f6;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+
+/*Style rule to hide tablet-destop class*/
+.tablet-desktop {
+    display: none;
+}
+
 /* Style rule for header */
 header {
 	font-family: Verdana, Arial, sans-serif;
@@ -23,6 +40,9 @@ header {
 
 /* Style rules for nav */
 nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 	padding: 1%;
     margin-bottom: 1%;
     background-color: #67afcb;
@@ -30,11 +50,14 @@ nav {
 
 nav ul {
     text-align: center;
+    list-style-type: none;
 }
 
 nav li {
     font-size: 1.5em;
     padding: 4%;
+    display: inline-block;
+    font-family: "B612", sans-serif;
 }
 
 nav li a {
@@ -49,6 +72,11 @@ main {
 	margin: 1% 1% 15%;
 	padding: 1%;
     font-size: 1.5em;
+    font-family: "Crimson Text", serif;
+}
+
+.corner {
+    border-radius: 12px;
 }
 
 #image {
