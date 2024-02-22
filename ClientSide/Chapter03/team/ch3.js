@@ -40,4 +40,42 @@ console.log(sparse[0]);
 console.log(sparse[1]);
 console.log(sparse[99]);
 
-//Switch Satement
+let foodMenu = new Array("Breakfast", "Lunch", "Dinner");
+//or
+// let foodMenu = ["Breakfast", "Lunch", "Dinner"];
+let size = foodMenu.length;
+
+//return the 3rd element in foodMenu array
+console.log(foodMenu[2]);
+
+//a loop to add numbers from 0 to 10
+let x = 1;
+let sum = 0;
+//while loop is a pre-test loop:it checks your condition before
+//you can get in the loop
+while(x <= 10) //no semicolon here
+{
+    sum += x; // total = total + num
+    x++;      // num = num + 1
+}
+console.log("Total (using a while loop) is " + sum);
+
+
+//reset variables
+num = 1;
+total = 0;
+//do...while is a post-test loop: it lets you in the loop, then 
+//check your condition
+do
+{
+    total += num; 
+    num++;
+} while(num <= 10);
+console.log("Total (using a do...while loop) is " + total);
+
+total = 0;
+//for loop is also a pre-test loop
+for(num = 1; num <= 10; num++) {
+    total += num;
+}
+console.log("Total (using a for loop) is " + total);
