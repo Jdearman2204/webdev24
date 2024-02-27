@@ -37,17 +37,51 @@ function showGames() {
         let gameInfo = "";
 
         //open the paragraph
-        gameInfo += "<p>";
+        switch (gameResults[i]) {
+            case "W":
+                gameInfo += "<p class='win'>";
+                break;
+            case "L":
+                gameInfo += "<p class='lose'>";
+                break;
+            case "S":
+                gameInfo += "<p class='suspended'>";
+                break;
+            case "P":
+                gameInfo += "<p class='postponed'>";
+                break;
+        }
 
-
+        //Display the game location
+        if (gameLocations[i] === "h") {
+            gameInfo += "vs. ";
+        } 
+        
+        else if (gameLocations[i] === "a") {
+            gameInfo += "@ ";
+        }
+    
         //Include the oponent
         gameInfo += gameOpponents[i] + "<br>";
 
         //Include the result and score
         gameInfo += gameResults[i] + ": (" + runsScored[i] + " - " + runsAllowed[i] + ")";
 
+        // Display innings played for suspended, shortened, or extraining games
+        if (gameInnings[i] < 5) {
+            gameInfo += " [" + gameInnings[i]+"]***";
+        } 
+        
+        else if (gameInnings[i] < 9) {
+            gameInfo += " [" + gameInnings[i] + "]*";
+        }
+
+        else if (gameInnings[i] > 9) {
+            gameInfo += " [" + gameInnings[i] + "]";
+        }
+
         //close paragraph
-        gameInfo += "<p>";
+        gameInfo += "</p>";
 
         //Write information in the table cell
         let tableCell = document.getElementById(gameDates[i]);
