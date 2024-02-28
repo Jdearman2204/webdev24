@@ -60,12 +60,15 @@ links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 let htmlCode = [];
 
 for (var i = 0; i < titles.length; i++) {
-      htmlCode += "<tr>\n";
-      htmlCode += "<td><a href='links[i]'>titles[i]</a><td>\n";
-      htmlCode += "<td>summaries[i]</td>\n";
-      htmlCode += "<td>ratings[i]</td>\n";
-      htmlCode += "</td>\n";
+      htmlCode += "<tr>";
+      htmlCode += "<td><a href='links[i]'>titles[i]</a><td>";
+      htmlCode += "<td>summaries[i]</td>";
+      htmlCode += "<td>ratings[i]</td>";
+      htmlCode += "</tr>";
 }
+
 var tableBody = document.getElementsByTagName("tbody")[0]
 
 tableBody.innerHTML = htmlCode;
+
+
