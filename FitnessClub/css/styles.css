@@ -1,99 +1,298 @@
-/*
-    Student: Jacob Dearman
-    Date: 2/28/2024
-    File Name: styles.css
+/*  Author Name: Jacob Dearman
+    Date: 2/7/2024
+    File Name: style.css
 */
 
 /* CSS Reset */
-body, header, main, footer, h1, div {
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rule for body */
+/* Style rules for body and images */
 body {
-	background-color: #e4f1f6;
+    background-color: #000;
 }
 
-/* Style rules for header */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rule for mobile viewport*/
+
+
+/* Style rule for header */
 header {
-	padding: 2%;
-	text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
 }
 
-h1 {
-    font-family: Verdana, Arial, serif;
+header img {
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: "Francois One", sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/*Show mobile class, hide tablet-desktop class*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for main content */
-
 main {
-    margin: 0 4%;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
 }
 
-.box {
-    border: 1px solid #000;
-    height: 200px;
-    width: 200px;
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
 
-/* Gradient style rules */
-.gradient1 {
-    background: linear-gradient(to right, #67afcb, #1a3e4c 25%);
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
 }
 
-.gradient2 {
-    background: linear-gradient(to left, #d4f7ec, #448d76 90%);
+.hours {
+    margin-left: 10%;
 }
 
-.gradient3 {
-    background: linear-gradient(to top left, #efddfd, #36065b);
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
 }
 
-.gradient4 {
-    background: linear-gradient(#e6e6ff, #70dbdb, #ffffcc, #cc6699);
+#weights,
+#cardio,
+#training {
+    margin: 0 2%;
 }
 
-.gradient5 {
-    background: repeating-linear-gradient(#df80ff 10%, #ccffff 20%);
+.round {
+    border-radius: 8px;
 }
 
-.gradient6 {
-    background: linear-gradient(to right, rgba(0,0,153,0) 25%, rgba(0,0,153,1));
+.external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.gradient7 {
-    background: radial-gradient(#0000ff, #fff, #ff0000);
+#contact {
+    text-align: center;
 }
 
-.gradient8 {
-    background: repeating-radial-gradient(#0000ff, #fff, #ff0000 15%);
+.contact-email-link {
+    color: #666600;
+    text-decoration: none;
 }
 
-/* Style rule for footer */
-footer {
-	font-size: .90em;
-	text-align: center;
-	padding: 2%;
-    clear: left;
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
 }
 
-/* Media Query for Tablet Viewports */
-@media screen and (min-width: 481px) {
-    
-    .columns {
-        width: 50%;
-        float: left;
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px), print {
+
+    /* Tablet Viewport: show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
     }
-    
+
+    .mobile {
+        display: none;
+    }
+
+    /*Tablet Viewport: Style rules for header*/
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /*Tablet Viewport: Style rules for nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+
+    #exercises {
+        clear: left;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
+        background-color: #f2f2f2;
+        padding: 1% 2%;
+    }
+
+    #exercises dt {
+        font-weight: bold;
+    }
+
+    #exercises dd {
+        padding: 0.5% 1% 2% 0;
+    }
+
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
 }
 
-/* Media Query for Desktop Viewports */
-@media screen and (min-width: 1200px) {
-    
-    .columns {
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1015px), print {
+
+    /* Desktop Viewport: Style rule for header */
+    header {
         width: 25%;
+        float: left;
+        padding-bottom: 0;
     }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    #weights,
+    #cardio,
+    #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #excercises {
+        clear: left;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
     
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
