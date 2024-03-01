@@ -1,0 +1,88 @@
+/*
+    Student Name: Jacob Dearman
+    Date: 2/29/2024
+    File Name: styles.css
+*/
+
+/*CSS Reset*/
+body,
+nav,
+main,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body area*/
+body {
+    background-color: darkseagreen;
+}
+
+header {
+        width: 15%;
+        float: left;
+        padding-top: 0.75%;
+        padding-left: 0.25%;
+    }
+
+/*Style rules for nav area*/
+nav {
+    background-color: darkolivegreen;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 2%;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.9em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: ivory;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    text-decoration: none;
+}
+
+/*Style rules for main content*/
+main {
+    margin: 2%;
+    padding: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main p {
+    margin-top: 2%;
+    font-size: 1em;
+}
+
+.intro {
+    border-bottom: 2px solid black;
+}
+
+#anime,
+#cartoon,
+#youtube {
+    width: 29%;
+    float: left;
+    margin: 2%;
+}
+
+.round {
+    border-radius: 8px;
+}
