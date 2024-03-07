@@ -1,3 +1,5 @@
+"use strict";
+
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-03
@@ -14,12 +16,12 @@ const MAX_REVIEW = 100;
 document.getElementById("limit").innerHTML = MAX_REVIEW;
 
 // Reference to elemets in the web page
-wordCountBox = document.getElementById("countValue");
-warningBox = document.getElementById("warningBox");
+let wordCountBox = document.getElementById("countValue");
+let warningBox = document.getElementById("warningBox");
 
 
 // Event listener for typing into the comment box
-document.getElementById("comment").addEventListener(keyup, updateCount);
+document.getElementById("comment").addEventListener("keyup", updateCount);
 
 // Function to update the count with each keyup event
 function updateCount() {
@@ -28,7 +30,7 @@ function updateCount() {
    
    // Count the number of characters in the comment box
    commentText = document.getElementById("comment").value;
-   charCount = countCharacters(commentsText);
+   charCount = countCharacters(commentText);
    
 }
 

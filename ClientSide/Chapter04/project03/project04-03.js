@@ -1,3 +1,4 @@
+"use strict";
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-03
@@ -10,28 +11,45 @@
 */
 
 // Maximum Length of Review
-const MAX_REVIEW = 100;
+const MAX_REVIEW = 1000;
 document.getElementById("limit").innerHTML = MAX_REVIEW;
 
 // Reference to elemets in the web page
-wordCountBox = document.getElementById("countValue");
-warningBox = document.getElementById("warningBox");
+let wordCountBox = document.getElementById("countValue");
+let warningBox = document.getElementById("warningBox");
 
 
 // Event listener for typing into the comment box
-document.getElementById("comment").addEventListener(keyup, updateCount);
+document.getElementById("comment").addEventListener("keyup", updateCount);
 
 // Function to update the count with each keyup event
 function updateCount() {
    // Set the warning box to an empty text string 
    warningBox.innerHTML = "";
-   
-   // Count the number of characters in the comment box
-   commentText = document.getElementById("comment").value;
-   charCount = countCharacters(commentsText);
-   
-}
 
+   // Count the number of characters in the comment box
+   let commentText = document.getElementById("comment").value;
+   let charCount = countCharacters(commentText);
+
+   try {
+      if (charCount > MAX_REVIEW) {
+         throw new Error("You have exceeded the character count limit")
+      }
+
+   } catch (error) {
+      let warningBox = document.getElementById('warningBox');
+      if (warningBox) {
+         warningBox.innerHTML = error.message;
+      }
+
+   } finally {
+      const wordCountBox = document.getElementById('wordCountBox');
+      if (wordCountBox) {
+         wordCountBox.innerHTML = charCount;
+      }
+   }
+
+}
 
 
 
