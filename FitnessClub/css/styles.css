@@ -14,7 +14,10 @@ div,
 img,
 ul,
 figure,
-figcaption {
+figcaption,
+section,
+article,
+aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -94,6 +97,30 @@ main {
     font-family: "Roboto Slab", serif;
 }
 
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
 .tel-link {
     background-color: #404040;
     padding: 2%;
@@ -118,6 +145,7 @@ main {
     font-size: 1.35em;
     color: #666600;
     font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
 }
 
 .frame {
@@ -184,7 +212,8 @@ footer p a {
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 630px),
+print {
 
     /* Tablet Viewport: show tablet-desktop class, hide mobile class */
     .tablet-desktop {
@@ -231,6 +260,18 @@ footer p a {
         padding: 10px;
     }
 
+    aside {
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(204, 204, 204, 0.5);
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 5px #b3b3b3;
+        border-radius: 0 15px;
+    }
+
     #exercises {
         clear: left;
         border-top: 1px solid #000;
@@ -259,7 +300,8 @@ footer p a {
 }
 
 /*Media Query for Desktop Viewport*/
-@media screen and (min-width: 1015px), print {
+@media screen and (min-width: 1015px),
+print {
 
     /* Desktop Viewport: Style rule for header */
     header {
@@ -297,8 +339,26 @@ footer p a {
         clear: left;
     }
 
+    article h3 {
+        font-size: 1.75em;
+    }
+
     main h1 {
         font-size: 1.8em;
+    }
+
+    .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
     }
 
     #weights,
@@ -316,7 +376,7 @@ footer p a {
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
-    
+
     #container {
         width: 1920px;
         margin: 0 auto;
@@ -329,4 +389,8 @@ footer p a {
         background-color: #fff;
         color: #000;
     }
+}
+
+.grid-item4 {
+    grid-column: 1 / span 3;
 }
