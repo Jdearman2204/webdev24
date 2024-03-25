@@ -55,7 +55,7 @@
 
             <h2> Complete the form below to begin your free trial.</h2>
 
-            <form><!--Start Form-->
+            <form class="form-grid"><!--Start Form-->
 
                 <fieldset>
                     <legend>Customer Information</legend>
@@ -85,6 +85,23 @@
                     <label for="nutr"><input type="checkbox" name="intrest" id="nutr"
                             value="Nutrition">Nutrition</label>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Referral Source</legend>
+                    <label for="reference">How did you find us?</label>
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisment</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+
             </form>
         </div>
     </main>
@@ -93,7 +110,6 @@
         <p> &copy; Copyright 2023. All Rights Reserved.</p>
         <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
     </footer>
-    </div> <!-- end of div container -->
 </body>
 
 </html>
