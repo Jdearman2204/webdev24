@@ -15,5 +15,11 @@ let pwd = document.getElementById("pwd");
 let pwd2 = document.getElementById("pwd2");
 
 submitButton.addEventListener("click", function() {
-      if 
-})
+      if {
+
+      } else if {
+
+      } else {
+            
+      }
+});
