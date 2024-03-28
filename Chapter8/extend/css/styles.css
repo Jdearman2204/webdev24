@@ -1,0 +1,51 @@
+/*Jacob Dearman 3/27/24*/
+
+/*CSS Reset*/
+body,
+main,
+table,
+caption,
+tr,
+th,
+td,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+table {
+    background-color: #ffe5dc;
+    border: 10px solid #fd4d0c;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td,
+tr {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+th,
+td {
+    border: 1px solid #a22c02;
+    padding: 2%;
+}
+
+tr:nth-child(odd) {
+    background-color: #fe9772;
+}
+
+th {
+    background-color: #792101;
+    font: white;
+}
