@@ -13,7 +13,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /* Style rules for body and images */
 body {
-    background-color: #9cb6e8;
+    background-color: #c8b7a7;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 /* Style rules for header content */
 header {
     text-align: center;
-    color: #234b95;
+    color: #803d40;
 }
 
 header h1 {
@@ -49,7 +49,7 @@ header h3 {
 
 /* Style rules for navigation area */
 nav {
-    background-color: #234b95;
+    background-color: #968473;
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav li {
     font-size: 1.5em;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
-    border-top: 1px solid #9cb6e8;
+    border-top: 1px solid #79503e;
 }
 
 nav li a {
@@ -75,19 +75,23 @@ nav li a {
 
 /* Style rule for hero image */
 #hero {
-    clear: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8b7a7;
 }
 
 /* Style rules for main content */
 main {
     padding: 2%;
-    background-color: #e5e9fc;
+    background-color: #968473;
     overflow: auto;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 main h2 {
-    color: #234b95;
+    color: #803d40;
 }
 
 main p {
@@ -101,7 +105,7 @@ main ul {
 
 .action {
     font-size: 1.25em;
-    color: #373684;
+    color: #803d40;
     font-weight: bold;
 }
 
@@ -118,13 +122,13 @@ main ul {
 }
 
 #contact .email-link {
-    color: #4645a8;
+    color: #803d40;
     text-decoration: none;
     font-weight: bold;
 }
 
 .tel-link {
-    background-color: #234b95;
+    background-color: #803d40;
     padding: 2%;
     width: 80%;
     margin: 0 auto;
@@ -138,7 +142,7 @@ main ul {
 }
 
 .map {
-    border: 6px solid #234b95;
+    border: 6px solid #803d40;
     width: 95%;
     height: 50%;
 }
@@ -148,11 +152,11 @@ footer {
     text-align: center;
     font-size: 0.85em;
     clear: left;
-    color: #234b95;
+    color: #803d40;
     font-weight: bold;
 }
 
 footer a {
-    color: #234b95;
+    color: #803d40;
     text-decoration: none;
 }
