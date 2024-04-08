@@ -30,7 +30,8 @@ body {
     background-color: #000;
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -72,39 +73,13 @@ header img {
     top: 0;
 }
 
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    font-size: 1.5em;
-    font-family: "Francois One", sans-serif;
-    border-top: 1px solid #fff;
-}
-
-nav li:first-child {
-    border-top: none;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
 /*Show mobile class, hide tablet-desktop class and menu-links id*/
 .mobile {
     display: block;
 }
 
-.tablet-desktop {
+.tablet-desktop,
+#menu-links {
     display: none;
 }
 
@@ -281,7 +256,8 @@ print {
         display: block;
     }
 
-    .mobile {
+    .mobile,
+    .mobile-nav {
         display: none;
     }
 
@@ -291,8 +267,19 @@ print {
     }
 
     /*Tablet Viewport: Style rules for nav area*/
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
     nav li {
-        border-top: none;
+        font-size: 1.5em;
+        font-family: "Francois One", sans-serif;
         display: inline-block;
         border-right: 1px solid #fff;
     }
@@ -303,6 +290,9 @@ print {
 
     nav li a {
         padding: 0.1em 0.75em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
     }
 
     /* Tablet Viewport: Style rules for main content area */
@@ -348,6 +338,10 @@ print {
 
     #exercises dd {
         padding: 0.5% 1% 2% 0;
+    }
+
+    #example {
+        display: none;
     }
 
     .tel-num {
@@ -397,15 +391,31 @@ print {
 
     /* Tablet Viewport: Animation */
     @-webkit-keyframes text-animation {
-        0% { font-size: 1em; }
-        50% { font-size: 2em; }
-        100% {font-size: 1.35em; }
+        0% {
+            font-size: 1em;
+        }
+
+        50% {
+            font-size: 2em;
+        }
+
+        100% {
+            font-size: 1.35em;
+        }
     }
 
     @keyframes text-animation {
-        0% { font-size: 1em; }
-        50% {font-size: 2em; }
-        100% {font-size: 1.35em; }
+        0% {
+            font-size: 1em;
+        }
+
+        50% {
+            font-size: 2em;
+        }
+
+        100% {
+            font-size: 1.35em;
+        }
     }
 
     figcaption {
