@@ -23,8 +23,12 @@ img {
 
 /* Style rules for mobile viewport */
 
-/* Style rule to hide tab-desk class */
-.tab-desk {
+/*Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile, .mobile-nav {
+    display: block;
+}
+
+.tablet-desktop {
     display: none;
 }
 
@@ -159,4 +163,17 @@ footer {
 footer a {
     color: #803d40;
     text-decoration: none;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px),
+print {
+    /* Tablet Viewport: show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
 }
