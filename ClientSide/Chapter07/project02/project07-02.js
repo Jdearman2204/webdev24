@@ -30,7 +30,20 @@ let deck = [];
 document.getElementById("deal").onclick = function() {   
    
       function newDeck() {
-            deckStr.split(",")
+            deck = deckStr.split(",");
+            deck.sort(shuffle);
+
+            function shuffle(a, b) {
+                  return 0.5 - Math.random();
+            }
+      }
+
+      for (let i = 0; i < cards.length; i++) {
+            if (deck.length === 0) {
+                  newDeck();
+            }
+            cards[i].textContent = deck.pop().trim();
+            cardsLeft.textContent = deck.length;
       }
 }
 
