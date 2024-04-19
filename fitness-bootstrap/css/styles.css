@@ -1,7 +1,7 @@
 /*
-    Student Name:
-    File Name:
-    Date: 
+    Student Name:Jacob Dearman
+    File Name:styles.css
+    Date: 4/17/21
 */
 
 /* Begin Mobile Styles */
@@ -17,7 +17,25 @@
 
 /* Style rules for hero image and header */
 
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.welcome {
+    position: absolute;
+    top: 20%;
+    margin: auto;
+    padding: 2em;
+}
+
+.welcome p {
+    font-size: 1.25em;
+    width: 70%;
+    line-height: 1.5;
+}
 /* Style rule for Nutrition hero text */
 #nutr.display-1 {
     font-size: 4em;
