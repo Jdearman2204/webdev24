@@ -86,6 +86,7 @@ input {
    float: left;
    clear: left;
    margin: 10px;
+   width: 5%;
 }
 
 label {

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <!--
       JavaScript 6th Edition
       Chapter 2
       Hands-on Project 2-4
 
-      Author: 
-      Date:   
+      Author: Jacob Dearman
+      Date:   4/19/24
 
       Filename: project02-04.html
    -->
@@ -15,6 +15,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 2-4</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project02-04.js" defer></script>
 </head>
 
 <body>
@@ -27,15 +28,15 @@
    <article>
       <h2>Lunch selections</h2>
       <form>
-         <input type="checkbox" id="chicken" value="10.95" />
+         <input type="number" id="chicken" value="0" min="0" />
          <label for="chicken">Fried chicken ($10.95)</label>
-         <input type="checkbox" id="halibut" value="13.95" />
+         <input type="number" id="halibut" value="0" min="0" />
          <label for="halibut">Fried halibut ($13.95)</label>
-         <input type="checkbox" id="burger" value="9.95" />
-         <label for="burger">Hamburger ($9.95</label>
-         <input type="checkbox" id="salmon" value="18.95" />
+         <input type="number" id="burger" value="0" min="0" />
+         <label for="burger">Hamburger ($9.95)</label>
+         <input type="number" id="salmon" value="0" min="0" />
          <label for="salmon">Grilled salmon ($18.95)</label>
-         <input type="checkbox" id="salad" value="7.95" />
+         <input type="number" id="salad" value="0" min="0" />
          <label for="salad">Side salad ($7.95)</label>
       </form>
    </article>
