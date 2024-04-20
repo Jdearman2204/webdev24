@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 3
+      Hands-on Project 3-1
+
+      Author: Jacob Dearman
+      Date:   4/20/24
+
+      Filename: project03-01.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-1</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project03-01.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-1
+      </h1>
+   </header>
+
+   <article>
+      <h2>Lunch selections</h2>
+      <form>
+         <input type="number" class="menuItem" id="item1" value="0" min="0" data-price="11.95"/>
+         <label for="item1">Fried chicken ($11.95) <span id="item1subtotal">$0.00</span> 
+            #<span id="item1quantity">0</span></label><br>
+         <input type="number" class="menuItem" id="item2" value="0" min="0" data-price="13.95"/>
+         <label for="item2">Fried halibut ($13.95) <span id="item2subtotal">$0.00</span> 
+            #<span id="item2quantity">0</span></label><br>
+         <input type="number" class="menuItem" id="item3" value="0" min="0" data-price="10.95"/>
+         <label for="item3">Hamburger ($10.95) <span id="item3subtotal">$0.00</span> 
+            #<span id="item3quantity">0</span></label><br>
+         <input type="number" class="menuItem" id="item4" value="0" min="0" data-price="17.95"/>
+         <label for="item4">Grilled salmon ($17.95) <span id="item4subtotal">$0.00</span> 
+            #<span id="item4quantity">0</span></label><br>
+         <input type="number" class="menuItem" id="item5" value="0" min="0" data-price="8.95"/>
+         <label for="item5">Side salad ($8.95) <span id="item5subtotal">$0.00</span> 
+            #<span id="item5quantity">0</span></label><br>
+      </form>
+      <aside>
+         <p>Subtotal: <span id="subtotal">$0.00</span></p>
+         <p>Tax (7%): <span id="tax">$0.00</span></p>
+         <p>Total: <span id="billTotal">$0.00</span></p>
+      </aside>
+   </article>
+
+   <div>
+      <p><a href="../index.html">Final Projects main page</a></p>
+   </div>
+</body>
+
+</html>
