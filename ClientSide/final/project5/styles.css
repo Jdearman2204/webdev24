@@ -99,7 +99,7 @@ fieldset legend {
 }
 
 fieldset select {
-   min-width: 150px;
+   min-width: 125px;
 }
 
 input[type="button"] {
