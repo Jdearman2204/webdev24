@@ -18,7 +18,7 @@ let clockTimer = document.getElementById("timer");
 window.addEventListener("puzzleSolved", updateRecord);
 
 // Event listener that is run when the page loads
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
       if (this.document.cookie) {
             bestText.textContent = getBestTime() + " seconds";
       }
@@ -26,10 +26,26 @@ window.addEventListener("load", function() {
 
 function getBestTime() {
       if (document.cookie) {
-          let cookieArray = document.cookie.split("=");
-          return parseInt(cookieArray[1]);
+            let cookieArray = document.cookie.split("=");
+            return parseInt(cookieArray[1]);
       } else {
-          return 9999;
+            return 9999;
       }
-  }
-  
+}
+
+function updateRecord() {
+      let solutionTime = parseInt(document.getElementById("timer").value);
+      let bestTime = getBestTime();
+
+      if (solutionTime < bestTime) {
+            bestTime = solutionTime;
+      }
+
+      bestText.textContent = bestTime + " seconds";
+
+      // Set cookie with expiration date of 90 days
+      let expirationDate = new Date();
+      expirationDate.setTime(expirationDate.getTime() + (90 * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + expirationDate.toUTCString();
+      document.cookie = "puzzle8Best=" + bestTime + ";" + expires + ";path=/";
+}
