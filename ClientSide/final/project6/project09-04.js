@@ -4,8 +4,8 @@
       Project 09-04
 
       Project to store high scores from a game in a cookie
-      Author: 
-      Date:   
+      Author: Jacob Dearman
+      Date:   4/26/24
 
       Filename: project09-04.js
 */
@@ -19,6 +19,17 @@ window.addEventListener("puzzleSolved", updateRecord);
 
 // Event listener that is run when the page loads
 window.addEventListener("load", function() {
-
+      if (this.document.cookie) {
+            bestText.textContent = getBestTime() + " seconds";
+      }
 });
 
+function getBestTime() {
+      if (document.cookie) {
+          let cookieArray = document.cookie.split("=");
+          return parseInt(cookieArray[1]);
+      } else {
+          return 9999;
+      }
+  }
+  
