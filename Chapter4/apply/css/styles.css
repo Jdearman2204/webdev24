@@ -16,7 +16,7 @@ body {
     background-color: #e3eaf8;
 }
 
-image {
+img {
     max-width: 100%;
     display: block;
 }
@@ -73,18 +73,18 @@ main h3 {
     font-size: 2em;
 }
 
-image {
+#image {
     width: 45%;
     float: left;
     padding: 1%;
 }
 
-group {
+#group {
     width: 45%;
     float: right;
 }
 
-external {
+.external {
     color: #1d396d;
     text-decoration: none;
     font-weight: bold;
